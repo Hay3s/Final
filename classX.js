@@ -3,7 +3,7 @@ class InteractiveCanvas {
       this.canvasWidth = canvasWidth;
       this.canvasHeight = canvasHeight;
   
-      // Initialize variables
+     
       this.circleSize = canvasWidth - 300;
       this.PosX = canvasWidth / 10;
       this.PosY = canvasHeight / 2;
@@ -12,17 +12,17 @@ class InteractiveCanvas {
       this.textHeight = 24;
       this.textX = canvasWidth - 10;
       this.textY = 10;
-      this.textWidthValue = 0; // To be set after measuring text width
+      this.textWidthValue = 0; 
     }
   
     setup() {
       createCanvas(this.canvasWidth, this.canvasHeight);
       background(0, 0, 0);
-      this.textWidthValue = textWidth(this.text); // Measure text width
+      this.textWidthValue = textWidth(this.text); 
     }
   
     draw() {
-      // Draw circles with interaction
+   
       for (let i = 0; i < 10; i++) {
         let circleColor;
         let xOffset = i * (this.circleSize / 3);
@@ -61,7 +61,7 @@ class InteractiveCanvas {
     }
   }
   
-  // Main Script
+  
   let interactiveCanvas;
   
   function setup() {
